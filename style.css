@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'YoungSerif';
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-size: 16px;
+    --var-brown-800: #854632;
+    --var-rose-50: #FFF7FB;
+    --var-rose-800: #7A284E;
+    --var-stone-100: #F3E5D7;
+    --var-stone-600: #5F564D;
+    --var-stone-150: #E3DDD7;
+    --var-stone-900: #312E2C;
+    --var-letter-spacing: 0;
+}
+
+body {
+    background-color: var(--var-stone-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+h1 {
+    color: var(--var-stone-900);
+    font-family: YoungSerif;
+    font-size: 2.5rem;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-block-end: 1.5rem;
+}
+
+h2 {
+    color: var(--var-brown-800);
+    font-family: YoungSerif;
+    font-size: 1.75rem;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-block-end: 1.5rem;
+}
+
+h3 {
+    color: var(--var-rose-800);
+    font-family: Outfit;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0;
+    margin-block-end: 1rem;
+}
+
+p,
+li,
+td,
+th {
+    color: var(--var-stone-600);
+    font-family: Outfit;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+li {
+    margin-block-end: 0.5rem;
+}
+
+td {
+    font-weight: bold;
+}
+
+th {
+    font-weight: normal;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.card-container {
+    max-width: 46rem;
+    margin-block: 8rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.time {
+    background-color: var(--var-rose-50);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.white-background {
+    background-color: white;
+}
+
+.light-background {
+    background-color: var(--var-stone-100);
+}
+
+img {
+    width: 100%;
+}
